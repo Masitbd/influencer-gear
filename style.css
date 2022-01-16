@@ -7,11 +7,14 @@ body{
 .menu{
   display: flex;
   justify-content: space-between;
+  padding-top: 20px;
  
   
 }
 
-.container{
+
+
+.container, .main-content{
   width: 90%;
   margin: 0 auto;
   
@@ -19,5 +22,122 @@ body{
 
 .right-menu a{
   text-decoration: none;
-  color: black;
+  color: black; padding-left: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.menu-text{
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 15px;
+  
+}
+
+.leff-menu{
+  padding-left: 10px;
+}
+
+.mylogo{
+  padding-right: 80px;
+}
+
+@media only screen  and (max-width: 688px) {
+
+  
+  .starter{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+ .fill{
+  color:tomato;
+  
+  }
+
+
+  @media only screen and (min-width: 688px)  {
+   
+    .starter{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .items{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+    }
+  
+}
+
+.left-start a{
+  text-decoration: none;
+  background-image: linear-gradient(red, tomato);
+  padding: 10px;
+  color: white;
+
+}
+
+
+.company{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  
+}
+
+/* 
+.items{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  background-color: red;
+} */
+
+@media only screen and (min-width: 689px)  {
+ /*  .menu{
+    background-color: tomato;
+    flex-direction: column;
+    padding-left: opx;
+    
+  } */
+  .items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  .item{
+    box-shadow: 10px 10px 30px rgb(124, 121, 121);
+    background-color: white;
+    padding: 20px;
+    
+   
+  }
+  .item img{
+    width: 100%;
+    height: 300px;
+   
+}
+.footer{
+  background-color: black;
+  height: 100px;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 20px;
+}
+}
+h2, .footer-text{
+  margin-top: 0;
+}
+
+.button-icon{
+  padding-left: 10px;
+ 
+}
+
+.influencer-button{
+  border-radius: 20px;
 }
